@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold Tec | Assistência Técnica e Venda de Celulares — São Paulo/SP</title>
+<meta name="description" content="Gold Tec: assistência técnica para iPhones e smartphones (troca de tela, bateria, conector de carga, desoxidação) e venda de celulares e acessórios em São Paulo.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Gold Tec | Assistência Técnica e Vendas">
+<meta property="og:description" content="Compre, conserte ou fale conosco! iPhones, Xiaomi e Samsung em São Paulo.">
+<meta property="og:url" content="https://goldtec.vercel.app/">
+<meta property="og:image" content="https://goldtec.vercel.app/img/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,800;1,900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--g1:#f6efbd;--g2:#e0b55c;--g3:#b07b3b;--g4:#92643a;--gold:linear-gradient(120deg,#92643a,#e0b55c 30%,#f6efbd 52%,#e0b55c 72%,#b07b3b);--bg:#000;--card:#0b0907;--line:#2a2113;--mut:#b9ae93}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:#d8cfb8;background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.5)),url(img/fundo.jpg) center/cover fixed #000;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:54px 0}
+.hero{position:relative;text-align:center;padding:48px 20px 30px}
+.hero::before{content:"";position:absolute;inset:0 0 auto 0;height:640px;background:radial-gradient(55% 55% at 50% 30%,rgba(224,181,92,.2),transparent 70%);pointer-events:none}
+.hero>*{position:relative}
+.logo{width:min(64vw,320px);height:auto;margin:0 auto;filter:drop-shadow(0 10px 30px rgba(224,181,92,.25))}
+.hero h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.tag{margin-top:20px;font-weight:600;letter-spacing:.04em;color:var(--g2)}
+.sub{margin-top:6px;color:var(--mut);font-size:.95rem}
+.chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.chip{border:1px solid var(--line);background:rgba(224,181,92,.06);border-radius:99px;padding:7px 14px;font-size:.85rem;color:var(--g1)}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 24px;border-radius:14px;font-weight:600;font-size:.98rem;text-decoration:none;min-width:200px;transition:transform .2s,box-shadow .2s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn:hover{transform:translateY(-2px)}
+.btn.gold{background:var(--gold);color:#1a1205;box-shadow:0 10px 28px rgba(224,181,92,.25)}
+.btn.line{border:1.5px solid var(--g3);color:var(--g1);background:transparent}
+.title{text-align:center;margin-bottom:28px}
+.title h2{font-family:'Exo 2',sans-serif;font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(1.6rem,5vw,2.3rem);line-height:1.1;color:#fff}
+.title h2 span{background:var(--gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+.title i{display:block;width:84px;height:4px;border-radius:4px;background:var(--gold);margin:12px auto}
+.title p{color:var(--mut);font-size:.95rem;max-width:620px;margin:0 auto}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.svc,.trio,.card{background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(120deg,#92643a,#e0b55c 40%,#2a2113 75%,#b07b3b) border-box;border:1.5px solid transparent;border-radius:16px}
+.svc{display:flex;align-items:center;gap:14px;padding:20px 18px;min-height:96px}
+.ic{width:46px;height:46px;flex:none;border-radius:12px;background:rgba(224,181,92,.1);color:var(--g2);display:grid;place-items:center}
+.ic svg{width:23px;height:23px}
+.svc b{display:block;font-size:.98rem;color:var(--g1);line-height:1.2}
+.svc small{color:var(--mut);font-size:.8rem}
+.trios{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.trio{text-align:center;padding:26px 18px}
+.trio .ic{margin:0 auto 12px}
+.trio b{display:block;font-family:'Exo 2',sans-serif;font-style:italic;font-weight:800;text-transform:uppercase;font-size:1.25rem;background:var(--gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+.trio p{margin-top:6px;color:var(--mut);font-size:.88rem}
+.store{display:grid;grid-template-columns:580px 1fr;gap:20px;align-items:stretch}.photo{border-radius:18px;overflow:hidden;border:1.5px solid #b07b3b;min-height:520px;box-shadow:0 14px 34px rgba(0,0,0,.6)}.photo img{width:100%;height:100%;object-fit:cover}.side{display:flex;flex-direction:column;gap:16px}.card.grow{flex:1}
+.card{padding:22px;display:flex;flex-direction:column}
+.row{display:flex;align-items:center;gap:14px;padding:11px 0;color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+.row small{display:block;color:var(--mut);font-size:.74rem;text-transform:uppercase;letter-spacing:.07em}
+.row strong{font-weight:600;color:var(--g1)}
+.acts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:auto;padding-top:16px}
+.acts .btn{min-width:0;padding:13px 8px;font-size:.92rem}
+.htt{font-family:'Exo 2',sans-serif;font-style:italic;font-weight:800;text-transform:uppercase;font-size:1.15rem;text-align:center;margin-bottom:6px;color:#fff}
+.hrow{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.hrow:last-child{border:0}.hrow span{font-weight:700;color:var(--g2)}
+footer{text-align:center;padding:36px 20px 50px;color:#8f866f;font-size:.85rem}
+footer img{width:110px;margin:0 auto 12px}
+.fab{position:fixed;right:18px;bottom:18px;z-index:50}
+.fab a{width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(37,211,102,.4)}
+.fab svg{width:30px;height:30px}
+@media(max-width:860px){.services{grid-template-columns:repeat(2,1fr)}.trios{grid-template-columns:1fr}.store{grid-template-columns:1fr}.photo{min-height:0;aspect-ratio:4/5;width:min(100%,360px);margin:0 auto}}
+@media(max-width:480px){.services{grid-template-columns:1fr}}
+.car{position:relative;height:385px;margin-top:8px;overflow:hidden}.cs{position:absolute;left:50%;top:0;width:300px;aspect-ratio:4/5;border-radius:18px;overflow:hidden;border:1.5px solid #b07b3b;box-shadow:0 14px 34px rgba(0,0,0,.6);transition:transform .5s,opacity .5s;cursor:pointer;background:#111}.cs img{width:100%;height:100%;object-fit:cover;display:block}.cs.on{border-color:#e0b55c;box-shadow:0 0 0 1px #e0b55c,0 18px 40px rgba(0,0,0,.7)}.cb{position:absolute;top:170px;z-index:5;width:44px;height:44px;border-radius:50%;border:1.5px solid #b07b3b;background:rgba(0,0,0,.75);color:#e0b55c;font-size:22px;cursor:pointer;display:grid;place-items:center}.cb.l{left:8px}.cb.r{right:8px}.dots{display:flex;justify-content:center;gap:8px;margin-top:14px}.dots i{width:8px;height:8px;border-radius:50%;background:#5a4528;cursor:pointer}.dots i.on{background:#e0b55c;width:22px;border-radius:6px}@media(max-width:700px){.car{height:310px}.cs{width:240px}.cb{top:130px}}</style>
+</head>
+<body>
+<header class="hero">
+  <img class="logo" src="img/logo.png" alt="Gold Tec Assistência Técnica" fetchpriority="high">
+  <h1>Gold Tec Assistência Técnica</h1>
+  <p class="tag">Compre, conserte ou fale conosco!</p>
+  <p class="sub">iPhones, Xiaomi e Samsung</p>
+  <div class="chips"><span class="chip">📍 2 lojas em São Paulo</span><span class="chip">🔧 Assistência especializada</span><span class="chip">✨ Acessórios e tecnologia</span></div>
+  <div class="cta">
+    <a class="btn gold" href="https://wa.me/5511978250929?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Gold%20Tec%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
+    <a class="btn line" href="https://www.instagram.com/assistencia.gold.tec/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-ig"/></svg>@assistencia.gold.tec</a>
+  </div>
+</header>
+<main>
+<section id="servicos"><div class="wrap">
+  <div class="title"><h2>Conserto e <span>venda</span></h2><i></i><p>Manutenção de iPhones e smartphones em geral, além da venda de celulares e acessórios de qualidade.</p></div>
+  <div class="services">
+    <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M9 7l6 6M15 7l-6 6"/></svg></span><div><b>Troca de tela</b><small>iPhones e smartphones</small></div></div>
+    <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="18" height="9" rx="2"/><path d="M22 11v3M6 11v3M10 11v3"/></svg></span><div><b>Troca de bateria</b><small>Bateria nova</small></div></div>
+    <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span><div><b>Conector de carga</b><small>Reparo e troca</small></div></div>
+    <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.500s6 6.500 6 11a6 6 0 0 1-12 0c0-4.500 6-11 6-11z"/></svg></span><div><b>Limpeza e desoxidação</b><small>Limpeza técnica</small></div></div>
+    <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/></svg></span><div><b>Celulares à venda</b><small>Novos e seminovos</small></div></div>
+    <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></span><div><b>Acessórios</b><small>Qualidade e tecnologia</small></div></div>
+  </div>
+</div></section>
+<section id="destaques"><div class="wrap">
+  <div class="title"><h2>Nossos <span>produtos</span></h2><i></i><p>Celulares, cabos e carregadores em pronta entrega.</p></div>
+  <div class="car" id="car"><button class="cb l" aria-label="Anterior">‹</button><div class="cs"><img src="img/prod/p1.jpg" alt="POCO F5 Pro" loading="lazy"></div><div class="cs"><img src="img/prod/p2.jpg" alt="Redmi 12" loading="lazy"></div><div class="cs"><img src="img/prod/p3.jpg" alt="Cabo USB-C para Lightning" loading="lazy"></div><div class="cs"><img src="img/prod/p4.jpg" alt="Carregador Kaidi 2 USB" loading="lazy"></div><div class="cs"><img src="img/prod/p5.jpg" alt="Cabo USB-C para Lightning 1m" loading="lazy"></div><div class="cs"><img src="img/prod/p6.jpg" alt="Fonte USB-C 20W" loading="lazy"></div><div class="cs"><img src="img/prod/p7.jpg" alt="Redmi Note 13 5G" loading="lazy"></div><div class="cs"><img src="img/prod/p8.jpg" alt="Redmi Note 13" loading="lazy"></div><div class="cs"><img src="img/prod/p9.jpg" alt="Redmi A3" loading="lazy"></div><button class="cb r" aria-label="Próximo">›</button></div>
+  <div class="dots" id="dots"></div>
+</div></section>
+<script>(function(){var c=document.getElementById('car'),s=[].slice.call(c.querySelectorAll('.cs')),d=document.getElementById('dots'),n=s.length,k=0;
+s.forEach(function(_,i){var e=document.createElement('i');e.onclick=function(){go(i)};d.appendChild(e)});
+function go(i){k=(i+n)%n;var g=window.innerWidth<700?150:230;s.forEach(function(e,j){var o=j-k;if(o>n/2)o-=n;if(o<-n/2)o+=n;var a=Math.abs(o);e.style.transform='translateX(calc(-50% + '+o*g+'px)) scale('+(a==0?1:a==1?.85:.72)+')';e.style.opacity=a>2?0:a==0?1:a==1?.7:.4;e.style.zIndex=10-a;e.style.pointerEvents=a>2?'none':'auto';e.classList.toggle('on',a==0)});[].forEach.call(d.children,function(e,j){e.classList.toggle('on',j==k)})}
+s.forEach(function(e,j){e.onclick=function(){go(j)}});
+c.querySelector('.l').onclick=function(){go(k-1)};c.querySelector('.r').onclick=function(){go(k+1)};
+var x=null;c.addEventListener('touchstart',function(e){x=e.touches[0].clientX},{passive:true});c.addEventListener('touchend',function(e){if(x===null)return;var dx=e.changedTouches[0].clientX-x;if(Math.abs(dx)>40)go(k+(dx<0?1:-1));x=null});
+document.addEventListener('keydown',function(e){if(e.key=='ArrowLeft')go(k-1);if(e.key=='ArrowRight')go(k+1)});
+window.addEventListener('resize',function(){go(k)});go(0)})();</script>
+<section id="diferenciais"><div class="wrap">
+  <div class="trios">
+    <div class="trio"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><b>Confiança</b><p>Atendimento transparente, com garantia e qualidade.</p></div>
+    <div class="trio"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><b>Agilidade</b><p>Reparos rápidos para você não ficar sem o celular.</p></div>
+    <div class="trio"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.500 9a2.500 2.500 0 0 0-2.500-1.500c-1.500 0-2.500.8-2.500 2s1 1.700 2.500 2 2.500.8 2.500 2-1 2-2.500 2A2.600 2.600 0 0 1 9.500 15M12 6v1.500M12 16.500V18"/></svg></span><b>Preço justo</b><p>Serviço de qualidade com valores justos.</p></div>
+  </div>
+</div></section>
+<section id="loja"><div class="wrap">
+  <div class="title"><h2>Nossa <span>loja</span></h2><i></i><p>Venha nos visitar ou fale direto no WhatsApp.</p></div>
+  <div class="store">
+    <div class="photo"><img src="img/loja.jpg" alt="Fachada da Gold Tec Assistência Técnica" loading="lazy"></div>
+    <div class="side">
+      <div class="card">
+        <a class="row" href="https://wa.me/5511978250929?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Gold%20Tec%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg></span><div><small>WhatsApp</small><strong>(11) 97825-0929</strong></div></a>
+        <a class="row" href="https://www.google.com/maps/search/?api=1&query=Rua+Itatiba+do+Sul%2C+516%2C+Brasil%C3%A2ndia%2C+S%C3%A3o+Paulo+-+SP%2C+02878-100" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.800 7 12 7 12z"/><circle cx="12" cy="10" r="2.600"/></svg></span><div><small>Endereço</small><strong>Rua Itatiba do Sul, 516 – Brasilândia<br>São Paulo/SP · CEP 02878-100</strong></div></a>
+        <a class="row" href="mailto:wictor.r.carvalho@gmail.com" style="border:0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><small>E-mail</small><strong style="word-break:break-all">wictor.r.carvalho@gmail.com</strong></div></a>
+        <div class="acts">
+          <a class="btn gold" href="https://wa.me/5511978250929?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Gold%20Tec%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg>Chamar</a>
+          <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=Rua+Itatiba+do+Sul%2C+516%2C+Brasil%C3%A2ndia%2C+S%C3%A3o+Paulo+-+SP%2C+02878-100" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.800 7 12 7 12z"/><circle cx="12" cy="10" r="2.600"/></svg>Ver no mapa</a>
+        </div>
+      </div>
+      <div class="card grow">
+        <div class="htt">Horário de <span style="background:var(--gold);-webkit-background-clip:text;background-clip:text;color:transparent">funcionamento</span></div>
+        <div class="hrow"><b>Segunda-feira</b><span>10:00 – 20:00</span></div>
+        <div class="hrow"><b>Terça-feira</b><span>10:00 – 20:00</span></div>
+        <div class="hrow"><b>Quarta-feira</b><span>10:00 – 20:00</span></div>
+        <div class="hrow"><b>Quinta-feira</b><span>10:00 – 20:00</span></div>
+        <div class="hrow"><b>Sexta-feira</b><span>10:00 – 20:00</span></div>
+        <div class="hrow"><b>Sábado</b><span>10:00 – 18:00</span></div>
+        <div class="hrow"><b>Domingo</b><span>11:00 – 15:00</span></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+</main>
+<footer>
+  <img src="img/logo.png" alt="Gold Tec" style="width:150px">
+  <p>© 2026 Gold Tec Assistência Técnica · São Paulo/SP</p>
+</footer>
+<div class="fab"><a href="https://wa.me/5511978250929?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Gold%20Tec%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg></a></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="i-wa"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.174-.3-.019-.465.13-.615.136-.135.301-.345.451-.523.146-.181.194-.301.297-.496.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.172-.015-.371-.015-.571-.015-.2 0-.523.074-.797.359-.273.3-1.045 1.02-1.045 2.475s1.07 2.865 1.219 3.075c.149.195 2.105 3.195 5.1 4.485.714.3 1.27.48 1.704.629.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345m-5.446 7.443h-.016c-1.77 0-3.524-.48-5.055-1.38l-.36-.214-3.75.975 1.005-3.645-.239-.375c-.99-1.576-1.516-3.391-1.516-5.26 0-5.445 4.455-9.885 9.942-9.885 2.654 0 5.145 1.035 7.021 2.91 1.875 1.859 2.909 4.35 2.909 6.99-.004 5.444-4.46 9.885-9.935 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.447h.006c6.585 0 11.946-5.336 11.949-11.896 0-3.176-1.24-6.165-3.495-8.411"/></g>
+    <g id="i-ig"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></g>
+  </defs>
+</svg>
+
+
+
+</body>
+</html>
